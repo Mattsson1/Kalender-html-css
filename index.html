@@ -11,11 +11,16 @@
   
   <div id="container"><!--"container" kommer vara i hela min kalender...
       Förutom formulären som kommer dyka upp när jag klickar på en dag-->
-  <div id="header"></div>
+  <div id="header">
+    <div id ="monthDisplay"></div>
+    <div>
+      <button id="backButton">Back</button>
+      <button id="nextButton">Next</button>
+    </div>
+  </div>
 
   
   <div id="weekdays">
-
   <div>Monday</div><!--Veckodagarna är evigt densamma så vi behöver inte ändra något. MEN, calendern och headern kommer ändra sig -->
   <div>Tuesday</div>
   <div>Wednesday</div>
@@ -27,6 +32,29 @@
 
   <div id="calendar"></div>
   </div>
+
+
+  <!-- För Bokningar -->
+
+  <div id="newEventModal">
+  <h2>Ny bokning</h2>
+
+  <input id="eventTitleInput" placeholder="Skapa ny bokning">
+
+    <button id="saveButton">Bekräfta bokning</button>
+    <button id="cancelButton">Tillbaka</button>
+  </div>
+
+  <div id="deleteEventModal">
+  <h2>Bokning</h2>
+
+  <p id="eventText"></p>
+  
+  <button id="deleteButton">Ta bort</button>
+  <button id="closeButton">Stäng</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
 
   <script src="main.js"></script>
 </body>
