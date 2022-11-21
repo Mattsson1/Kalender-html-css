@@ -145,11 +145,13 @@ function saveEvent()
             title: eventTitleInput.value,});
         
         localStorage.setItem('events', JSON.stringify(events));//Sparar bokningar i localstorage i vår events array
+        closeModal();//sparar bokning sen kör jag funktionen closemodal som stänger rutan
     }
     else
     {
         eventTitleInput.classList.add('error');
     }
+    
 }
 
 function deleteEvent()
